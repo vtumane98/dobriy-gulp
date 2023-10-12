@@ -230,12 +230,13 @@ $(document).ready(function() {
         }
     })
 
-    //transfer online tabs
-    $(document).on('change', '.js-transfer-online-tab', function(){
-        if($(this).is(':checked')){
+    //transfer and etc online tabs
+    $(document).on('change', '.js-online-tab', function () {
+        if ($(this).is(':checked')) {
+            let $wrap = $(this).closest('.main-modal__container');
             let index = $(this).parent().index();
-            $('.js-transfer-online-block').removeClass('active');
-            $('.js-transfer-online-block').eq(index).addClass('active');
+            $wrap.find('.js-online-block').removeClass('active');
+            $wrap.find('.js-online-block').eq(index).addClass('active');
         }
     })
 
