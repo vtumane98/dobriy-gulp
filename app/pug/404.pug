@@ -1,0 +1,17 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "404 - Добрый:)юг"
+
+block content
+    main.main.post
+        .not-found
+            .container
+                .not-found__content
+                    h1.not-found__title 404
+                    .not-found__desc
+                        p Такой страницы нет, но есть много других полезных страниц
+                    .not-found__btn
+                        a(href="index.html").support-btn.magnetic.js-magnetic
+                            span
+                                span На главную

@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "browserslist": "^4.16.6",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pretty-html": "^2.0.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

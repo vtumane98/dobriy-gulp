@@ -1,0 +1,220 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Добрый:)юг"
+
+block content
+    main.main
+        .post-wrap
+            section.hero-section
+                .container
+                    h1.hero-section__title Комфортное пространство для&nbsp;людей с&nbsp;ментальными особенностями
+                    .hero-section__wrap
+                        .hero-section__bg
+                            .hero-section__bg-icon.hero-section__bg-icon--1
+                                img(src="img/hero-section-bg-icon-1.svg", alt="")
+                            .hero-section__bg-icon.hero-section__bg-icon--2
+                                img(src="img/hero-section-bg-icon-2.svg", alt="")
+                            .hero-section__bg-icon.hero-section__bg-icon--3
+                                img(src="img/hero-section-bg-icon-3.svg", alt="")
+                            .hero-section__bg-icon.hero-section__bg-icon--4
+                                img(src="img/hero-section-bg-icon-4.svg", alt="")
+                        .hero-section__slider.swiper-container
+                            .swiper-wrapper
+                                .hero-section__slide.swiper-slide
+                                    .hero-section__item.top-left.bottom-left.bottom-right
+                                        .hero-section__item-bg
+                                            img(src="img/hero-section-img-1.jpg", alt="")
+                                .hero-section__slide.swiper-slide
+                                    .hero-section__item.top-left.top-right.bottom-right
+                                        .hero-section__item-bg
+                                            img(src="img/hero-section-img-2.jpg", alt="")
+                                        .hero-section__item-tag.bottom-left
+                                            .tag.tag--pink Учим новому
+                                .hero-section__slide.swiper-slide
+                                    .hero-section__item.top-right.bottom-left.bottom-right
+                                        .hero-section__item-bg
+                                            img(src="img/hero-section-img-3.jpg", alt="")
+                                        .hero-section__item-tag.top-left
+                                            .tag.tag--white Развиваем трудовые навыки
+                                .hero-section__slide.swiper-slide
+                                    .hero-section__item.top-right.bottom-left(style="background-color: #CDEDD3")
+                                        .hero-section__text
+                                            p Меняем к лучшему жизнь людей с&nbsp;аутизмом, синдромом Дауна и&nbsp;другими ментальными особенностями
+                                        .hero-section__icon
+                                            img(src="img/hero-section-item-icon.svg", alt="")
+                                .hero-section__slide.swiper-slide
+                                    .hero-section__item.top-left.bottom-left.bottom-right
+                                        .hero-section__item-bg
+                                            img(src="img/hero-section-img-4.jpg", alt="")
+                                        .hero-section__item-tag.top-right
+                                            .tag.tag--pink Помогаем найти работу
+                        .hero-section__btn
+                            a(href="#donation" data-fancybox="" data-touch="false" data-donation-type="1").support-btn.magnetic.js-magnetic
+                                span
+                                    span Поддержать
+
+            section.home-about.section
+                .container
+                    .home-about__header
+                        h2.title.home-about__title В мире <b><i>более 10%</i></b> людей страдают <span>ментальными</span> расстройствами
+                        button(type="button").home-about__hint.hint.hint--green i
+                        .home-about__hint-text.hint-text.hint-text--green.left По данным ВОЗ, 1 из 100 детей в мире рождаются с аутизмом, а каждый 700й ребёнок — с синдромом Дауна
+                    .home-about__wrap.section
+                        .home-about__row
+                            .home-about__col
+                                .home-about__item
+                                    .home-about__item-bg
+                                        img(src="img/home-about-item-img-1.jpg", alt="")
+                                        .home-about__item-bg-icon
+                                            img(src="img/home-about-item-bg-icon-1.svg", alt="")
+                            .home-about__col
+                                .home-about__item
+                                    .home-about__item-info
+                                        h3.home-about__item-sub 80+ подростков и&nbsp;взрослых 
+                                        .home-about__item-desc
+                                            p с ментальными нарушениями, уже участвуют в наших проектах
+                            .home-about__col
+                                .home-about__item
+                                    .home-about__item-info
+                                        h3.home-about__item-sub 16 сотрудников и&nbsp;50+ волонтеров
+                                        .home-about__item-desc
+                                            p помогают людям с особенностями развития и их семьям
+                            .home-about__col
+                                .home-about__item
+                                    .home-about__item-info
+                                        h3.home-about__item-sub 18 молодых людей
+                                        .home-about__item-desc
+                                            p получили сопровождение трудовых консультантов и смогли найти работу
+                            .home-about__col
+                                .home-about__item
+                                    .home-about__item-info
+                                        h3.home-about__item-sub 5 воспитанников
+                                        .home-about__item-desc
+                                            p трудоустроены у нас, <br>в&nbsp;организации «Добрый Юг»
+                            .home-about__col
+                                .home-about__item
+                                    .home-about__item-bg
+                                        img(src="img/home-about-item-img-2.jpg", alt="")
+                                        .home-about__item-bg-icon
+                                            img(src="img/home-about-item-bg-icon-2.svg", alt="")
+
+            section.home-training.section
+                .container
+                    .home-training__header
+                        h2.title.home-training__title <b><i>40+ наших ребят</i></b> <br><span><span>не&nbsp;изолированы</span> от&nbsp;общества,</span> а&nbsp;трудятся в&nbsp;инклюзивных мастерских, могут получить оплачиваемую работу и&nbsp;жить нормально
+                            button(type="button").home-training__hint.hint.hint--blue i
+                            .home-training__hint-text.hint-text.hint-text--blue.right Согласно исследованию «Левады», нормально жить — это иметь социальные возможности  не хуже, чем&nbsp;у&nbsp;большинства в обществе 
+                .home-training__block.section
+                    .container
+                        .home-training__wrap
+                            .home-training__top
+                                .home-training__left
+                                    h3.home-training__sub Благодаря поддержке доноров ребята с&nbsp;ментальными особенностями учатся самостоятельности
+                                .home-training__right
+                                    .home-training__desc
+                                        p Приглашаем вас развивать благотворительные программы вместе. Оформите регулярное пожертвование или сделайте разовый взнос.
+                            .home-training__bottom
+                                .home-training__bg
+                                    .home-training__bg-icon
+                                        img(src="img/home-training-bg-icon-1.svg", alt="")
+                                    .home-training__bg-icon
+                                        img(src="img/home-training-bg-icon-2.svg", alt="")
+                                .home-training__tag-list
+                                    .home-training__tag
+                                        .tag.tag--white Коммуникация
+                                    .home-training__tag
+                                        .tag.tag--white Бытовые навыки
+                                    .home-training__tag
+                                        .tag.tag--yellow Творчество
+                                .home-training__btn
+                                    a(href="#donation" data-fancybox="" data-touch="false" data-donation-type="1").support-btn.magnetic.js-magnetic
+                                        span
+                                            span Поддержать
+
+            .home-partners.section
+                .container
+                    .home-partners__container
+                        .home-partners__wrap
+                            .home-partners__slider.swiper-container
+                                .swiper-wrapper
+                                    .home-partners__slide.swiper-slide
+                                        .home-partners__item
+                                            .home-partners__logo
+                                                img(src="img/home-partners-logo-1.svg", alt="")
+                                            .home-partners__info
+                                                .home-partners__tag-list
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сбор средств
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сувениры
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--pink 2023
+                                                .home-partners__sub «СИБУР в помощь людям с&nbsp;особенностями»
+                                                .home-partners__desc
+                                                    p Вместе мы организовали благотворительный сбор средств на ремонт в новой мастерской. А также подготовили сувениры для бизнесс-партнёров СИБУР.
+                                    .home-partners__slide.swiper-slide
+                                        .home-partners__item
+                                            .home-partners__logo
+                                                img(src="img/home-partners-logo-2.svg", alt="")
+                                            .home-partners__info
+                                                .home-partners__tag-list
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сбор средств
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сувениры
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--pink 2023
+                                                .home-partners__sub «СИБУР в помощь людям с&nbsp;особенностями»
+                                                .home-partners__desc
+                                                    p Вместе мы организовали благотворительный сбор средств на ремонт в новой мастерской. А также подготовили сувениры для бизнесс-партнёров СИБУР.
+                                    .home-partners__slide.swiper-slide
+                                        .home-partners__item
+                                            .home-partners__logo
+                                                img(src="img/home-partners-logo-3.svg", alt="")
+                                            .home-partners__info
+                                                .home-partners__tag-list
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сбор средств
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сувениры
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--pink 2023
+                                                .home-partners__sub «СИБУР в помощь людям с&nbsp;особенностями»
+                                                .home-partners__desc
+                                                    p Вместе мы организовали благотворительный сбор средств на ремонт в новой мастерской. А также подготовили сувениры для бизнесс-партнёров СИБУР.
+                                    .home-partners__slide.swiper-slide
+                                        .home-partners__item
+                                            .home-partners__logo
+                                                img(src="img/home-partners-logo-2.svg", alt="")
+                                            .home-partners__info
+                                                .home-partners__tag-list
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сбор средств
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сувениры
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--pink 2023
+                                                .home-partners__sub «СИБУР в помощь людям с&nbsp;особенностями»
+                                                .home-partners__desc
+                                                    p Вместе мы организовали благотворительный сбор средств на ремонт в новой мастерской. А также подготовили сувениры для бизнесс-партнёров СИБУР.
+                                    .home-partners__slide.swiper-slide
+                                        .home-partners__item
+                                            .home-partners__logo
+                                                img(src="img/home-partners-logo-3.svg", alt="")
+                                            .home-partners__info
+                                                .home-partners__tag-list
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сбор средств
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--white Сувениры
+                                                    .home-partners__tag
+                                                        .tag.tag--small.tag--pink 2023
+                                                .home-partners__sub «СИБУР в помощь людям с&nbsp;особенностями»
+                                                .home-partners__desc
+                                                    p Вместе мы организовали благотворительный сбор средств на ремонт в новой мастерской. А также подготовили сувениры для бизнесс-партнёров СИБУР.
+                    .slider-nav.home-partners__nav
+                        button(type="button").slider-nav__btn.slider-nav__prev.home-partners__prev
+                            img(src="img/prev.svg", alt="")
+                        button(type="button").slider-nav__btn.slider-nav__next.home-partners__next
+                            img(src="img/next.svg", alt="")

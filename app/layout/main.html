@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formstyler.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css?v1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title></title>
+</head>
+
+<body>
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__row">
+                    <div class="header__left">
+                        <div class="header__logo">
+                            <a href="#">
+                                <span>добрый:)юг</span>
+                                <span>д:)ю</span>
+                            </a>
+                        </div>
+                        <div class="header__menu js-mob-menu">
+                            <button class="header__menu-close js-menu-close" type="button">x</button>
+                            <nav class="header__nav">
+                                <ul>
+                                    <li>
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Хочу Помочь</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Нужна Помощь</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Программы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__contacts">
+                            <div class="header__phone">
+                                <a href="tel:+79282416184">+7 (928) 241-61-84</a>
+                            </div>
+                            <div class="header__address">Краснодар, Пр.Чекистов, д.10</div>
+                        </div>
+                        <button class="header__menu-icon js-menu-open" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <span>добрый:)юг</span>
+                        </a>
+                    </div>
+                    <div class="footer__left-col">
+                        <div class="footer__desc">Краснодарская региональная благотворительная общественная организация «Добрый-Юг»</div>
+                        <div class="footer__requisites">
+                            <p>ОГРН: 1142300003889</p>
+                            <p>ИНН/КПП: 2304980355/231201001</p>
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul>
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Программы</a>
+                            </li>
+                            <li>
+                                <a href="#">Хочу Помочь</a>
+                            </li>
+                            <li>
+                                <a href="#">Нужна Помощь</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__phone">
+                        <a href="tel:+79282416184">+7 (928) 241-61-84</a>
+                    </div>
+                    <div class="footer__contacts">
+                        <p>Краснодар, Пр.чекистов д.10</p>
+                        <p>ПН – ПТ: с 9 до 18</p>
+                        <p>СБ: с 10 до 14</p>
+                    </div>
+                    <div class="footer__nav">
+                        <ul>
+                            <li>
+                                <a href="#">Вконтакте</a>
+                            </li>
+                            <li>
+                                <a href="#">Одноклассники</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__partner">
+                    <img src="img/footer-partner.png" alt="">
+                </div>
+                <div class="footer__btn">
+                    <a class="arrow-btn" href="#donation" data-fancybox="" data-touch="false" data-donation-type="1">
+                        <div class="arrow-btn__icon">
+                            <img src="img/next.svg" alt="">
+                        </div>
+                        <div class="arrow-btn__label">
+                            <span>Поддержать</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-item">&copy; 2014-2023, «Добрый-Юг»</div>
+                <div class="footer__bottom-col">
+                    <div class="footer__bottom-item">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__bottom-item">
+                        <a href="#">Согласие на обработку данных</a>
+                    </div>
+                </div>
+                <div class="footer__bottom-item">
+                    <a href="https://www.insaim.design/" target="_blank">Дизайн и разработка — INSAIM</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="main-modal feedback-modal post-text" id="feedback-modal">
+        <button class="main-modal__close" type="button" data-fancybox-close>
+            <img src="img/close-modal.svg" alt="">
+        </button>
+        <div class="main-modal__container">
+            <form class="feedback-modal__wrap">
+                <div class="main-modal__title feedback-modal__title">Оставить заявку</div>
+                <div class="feedback-modal__content">
+                    <div class="feedback-modal__list feedback-modal__col">
+                        <div class="feedback-modal__input">
+                            <div class="main-input">
+                                <input class="js-form-input" type="text" placeholder="Имя и Фамилия" name="name">
+                            </div>
+                        </div>
+                        <div class="feedback-modal__input">
+                            <div class="main-input">
+                                <input class="js-form-input" type="email" placeholder="Ваш email" name="email">
+                            </div>
+                        </div>
+                        <div class="feedback-modal__input">
+                            <div class="main-input">
+                                <input class="js-form-input js-tel-input" type="tel" placeholder="Номер телефона" name="phone">
+                            </div>
+                        </div>
+                        <div class="feedback-modal__input">
+                            <div class="main-input">
+                                <input class="js-form-input error" type="email" placeholder="Ваш email" name="email">
+                                <span>Неверный формат</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-modal__type feedback-modal__col">
+                        <div class="main-radio-tabs">
+                            <label class="main-radio-tabs__item">
+                                <input class="js-transfer-online-tab" type="radio" name="transfer-online-bank" checked>
+                                <span>Волонтер</span>
+                            </label>
+                            <label class="main-radio-tabs__item">
+                                <input class="js-transfer-online-tab" type="radio" name="transfer-online-bank">
+                                <span>Благополучатель</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="feedback-modal__program feedback-modal__col">
+                        <div class="main-select">
+                            <select class="js-select">
+                                <option value="0">Программа</option>
+                                <option value="2">Сопровождаемое трудоустройство</option>
+                                <option value="3">Переработка джинсовой ткани</option>
+                                <option value="4">Комплексные развивающие занятия</option>
+                                <option value="5">Инклюзивные трудовые мастерские</option>
+                                <option value="6">Сопровождаемое трудоустройство</option>
+                                <option value="7">Комплексные развивающие занятия</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="feedback-modal__agree feedback-modal__col">
+                        <div class="main-checkbox">
+                            <label>
+                                <input type="checkbox">
+                                <span>Я даю согласие на обработку персональных данных</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="feedback-modal__btn feedback-modal__col">
+                        <button class="btn" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main-modal create-event-modal post-text" id="create-event">
+        <button class="main-modal__close" type="button" data-fancybox-close>
+            <img src="img/close-modal.svg" alt="">
+        </button>
+        <div class="main-modal__container">
+            <div class="main-modal__wrap">
+                <div class="main-modal__title">Создать событие в&nbsp;помощь организации</div>
+                <div class="create-event-modal__content">
+                    <p>У Вашего издания, портала или блога много читателей? Расскажите о нас, наших проектах и подопечных, размещая наши баннеры, публикуя статьи или посты.</p>
+                    <ol>
+                        <li>Зарегистрируйтесь на&nbsp;сайте Пользуясь случаем</li>
+                        <li>Создайте сбор по&nbsp;любому поводу</li>
+                        <li>Выберите “Добрый-Юг” в графе организаций, которым можно помочь</li>
+                        <li>Расскажите друзьям о&nbsp;сборе с&nbsp;помощью мессенджеров и&nbsp;социальных сетей</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="main-modal__btn">
+                <a class="support-btn magnetic js-magnetic" href="#">
+                    <span>
+              <span>Создать событие</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-modal transfer-goods-modal post-text" id="transfer-goods">
+        <button class="main-modal__close" type="button" data-fancybox-close>
+            <img src="img/close-modal.svg" alt="">
+        </button>
+        <div class="main-modal__container">
+            <div class="main-modal__wrap">
+                <div class="main-modal__title">Передать товары</div>
+                <div class="transfer-goods-modal__content">
+                    <p>“Доброму-Югу” всегда нужны:</p>
+                    <ul>
+                        <li>Материалы для&nbsp;творчества (цветная/белая бумага и&nbsp;картон, пластилин, клей и др.)</li>
+                        <li>Материалы для&nbsp;неПросто мастерских (нитки и&nbsp;ткань, инструменты для&nbsp;работ с&nbsp;керамикой, бумага, краски и&nbsp;др.)</li>
+                        <li>Материалы для&nbsp;мелкого ремонта</li>
+                        <li>Офисные принадлежности</li>
+                    </ul>
+                    <p>Если что-то из&nbsp;этого у&nbsp;вас есть дома или вы&nbsp;хотите помочь как&nbsp;представитель бизнеса, будем рады видеть вас в&nbsp;нашем офисе по&nbsp;адресу: : г.&nbsp;Краснодар, пр.&nbsp;Чекистов,&nbsp;10.</p>
+                </div>
+            </div>
+            <div class="main-modal__btn">
+                <a class="support-btn magnetic js-magnetic" href="#">
+                    <span>
+              <span>Написать в&nbsp;WhatsApp</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-modal information-support-modal post-text" id="information-support">
+        <button class="main-modal__close" type="button" data-fancybox-close>
+            <img src="img/close-modal.svg" alt="">
+        </button>
+        <div class="main-modal__container">
+            <div class="main-modal__wrap">
+                <div class="main-modal__title">Оказать информационную поддержку</div>
+                <div class="information-support-modal__content">
+                    <p>У Вашего издания, портала или блога много читателей? Расскажите о&nbsp;нас, наших проектах и&nbsp;подопечных, размещая наши баннеры, публикуя статьи или&nbsp;посты.</p>
+                </div>
+                <div class="information-support-modal__list">
+                    <div class="information-support-modal__col">
+                        <div class="information-support-modal__item">
+                            <a class="arrow-btn" href="#" target="_blank">
+                                <div class="arrow-btn__icon">
+                                    <img src="img/next.svg" alt="">
+                                </div>
+                                <div class="arrow-btn__label">
+                                    <span>Вконтакте</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="information-support-modal__col">
+                        <div class="information-support-modal__item">
+                            <a class="arrow-btn" href="#" target="_blank">
+                                <div class="arrow-btn__icon">
+                                    <img src="img/next.svg" alt="">
+                                </div>
+                                <div class="arrow-btn__label">
+                                    <span>Одноклассники</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="information-support-modal__col">
+                        <div class="information-support-modal__item">
+                            <a class="arrow-btn" href="#" target="_blank">
+                                <div class="arrow-btn__icon">
+                                    <img src="img/next.svg" alt="">
+                                </div>
+                                <div class="arrow-btn__label">
+                                    <span>Телеграмм</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-modal transfer-online-modal post-text" id="transfer-online">
+        <button class="main-modal__close" type="button" data-fancybox-close>
+            <img src="img/close-modal.svg" alt="">
+        </button>
+        <div class="main-modal__container">
+            <div class="main-modal__wrap">
+                <div class="main-modal__title">Сделать перевод в&nbsp;онлайн&#8209;банке</div>
+            </div>
+            <div class="transfer-online-modal__content">
+                <div class="main-modal__wrap">
+                    <div class="transfer-online-modal__tabs">
+                        <div class="main-radio-tabs">
+                            <label class="main-radio-tabs__item">
+                                <input class="js-transfer-online-tab" type="radio" name="transfer-online-bank" checked>
+                                <span>в Сбербанке</span>
+                            </label>
+                            <label class="main-radio-tabs__item">
+                                <input class="js-transfer-online-tab" type="radio" name="transfer-online-bank">
+                                <span>в банке Тинькофф</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="transfer-online-modal__wrap">
+                    <div class="transfer-online-modal__block js-transfer-online-block active">
+                        <div class="main-modal__wrap">
+                            <div class="transfer-online-modal__block-content">
+                                <ol>
+                                    <li>В личном кабинете «Сбербанк-Онлайн» выберите вкладку «Платежи и переводы». Далее — «Благотворительность и&nbsp;социальная помощь». Выберите «Добрый-Юг» и&nbsp;укажите сумму пожертвования.</li>
+                                    <li>В мобильном приложении «Сбербанка» выберите вкладку «Платежи», введите в&nbsp;строке поиска название Добрый-Юг. Укажите сумму пожертвования.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="main-modal__btn">
+                            <a class="support-btn magnetic js-magnetic" href="#">
+                                <span>
+                    <span>Перейти в&nbsp;Сбербанк</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="transfer-online-modal__block js-transfer-online-block">
+                        <div class="main-modal__wrap">
+                            <div class="transfer-online-modal__block-content">
+                                <ol>
+                                    <li>В личном кабинете «Тинькофф» выберите вкладку «Платежи и переводы». Далее — «Благотворительность и&nbsp;социальная помощь». Выберите «Добрый-Юг» и&nbsp;укажите сумму пожертвования.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="main-modal__btn">
+                            <a class="support-btn magnetic js-magnetic" href="#">
+                                <span>
+                    <span>Перейти в&nbsp;Тинькофф</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-modal donation-modal post-text" id="donation">
+        <button class="main-modal__close" type="button" data-fancybox-close>
+            <img src="img/close-modal.svg" alt="">
+        </button>
+        <div class="main-modal__container">
+            <div class="main-modal__wrap">
+                <div class="main-modal__title">Тип пожертвования</div>
+            </div>
+            <form class="donation-modal__content">
+                <div class="donation-modal__types">
+                    <label class="donation-modal__types-item">
+                        <input class="js-donation-modal-type" type="radio" name="donation-type" data-donation-type="1" checked>
+                        <span>Ежемесячно</span>
+                    </label>
+                    <label class="donation-modal__types-item">
+                        <input class="js-donation-modal-type" type="radio" name="donation-type" data-donation-type="0">
+                        <span>Разово</span>
+                    </label>
+                </div>
+                <div class="donation-modal__sum">
+                    <div class="donation-modal__sum-col">
+                        <label class="donation-modal__sum-radio">
+                            <input class="js-donation-sum-btn" type="radio" name="donation-sum" checked>
+                            <span>100 ₽</span>
+                        </label>
+                    </div>
+                    <div class="donation-modal__sum-col">
+                        <label class="donation-modal__sum-radio">
+                            <input class="js-donation-sum-btn" type="radio" name="donation-sum">
+                            <span>300 ₽</span>
+                        </label>
+                    </div>
+                    <div class="donation-modal__sum-col">
+                        <label class="donation-modal__sum-radio">
+                            <input class="js-donation-sum-btn" type="radio" name="donation-sum">
+                            <span>500 ₽</span>
+                        </label>
+                    </div>
+                    <div class="donation-modal__sum-col">
+                        <label class="donation-modal__sum-radio">
+                            <input class="js-donation-sum-btn" type="radio" name="donation-sum">
+                            <span>1000 ₽</span>
+                        </label>
+                    </div>
+                    <div class="donation-modal__sum-col">
+                        <div class="donation-modal__sum-input">
+                            <div class="main-input">
+                                <input class="js-donation-sum-input" type="number" placeholder="Другая сумма" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-modal__pay-method donation-modal__col">
+                    <div class="main-modal__sub">Способ оплаты</div>
+                    <div class="donation-modal__pay-method-wrap">
+                        <div class="pay-method">
+                            <div class="pay-method__row">
+                                <div class="pay-method__col">
+                                    <label class="pay-method__item">
+                                        <input type="radio" name="pay-method" checked>
+                                        <span>
+                        <img src="img/pay-method-1.png" alt="">
+                        <span>Банковская карта</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="pay-method__col">
+                                    <label class="pay-method__item">
+                                        <input type="radio" name="pay-method">
+                                        <span>
+                        <img src="img/pay-method-2.png" alt="">
+                        <span>Платежная квитанция</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="pay-method__col">
+                                    <label class="pay-method__item">
+                                        <input type="radio" name="pay-method">
+                                        <span>
+                        <img src="img/pay-method-3.png" alt="">
+                        <span>С помощью SMS</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-modal__info donation-modal__col">
+                    <div class="main-modal__sub">Ваши данные</div>
+                    <div class="donation-modal__info-wrap">
+                        <div class="donation-info">
+                            <div class="donation-info__row">
+                                <div class="donation-info__col">
+                                    <div class="main-input">
+                                        <input type="email" placeholder="Ваш email" name="email">
+                                    </div>
+                                </div>
+                                <div class="donation-info__col">
+                                    <div class="main-input">
+                                        <input type="text" placeholder="Имя и Фамилия" name="name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-modal__agree">
+                    <div class="donation-agree">
+                        <div class="donation-agree__col">
+                            <div class="main-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Соглашаюсь с&nbsp;офертой</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="donation-agree__col">
+                            <div class="main-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>Соглашаюсь на&nbsp;обработку персональных данных</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-modal__btn">
+                    <button class="btn" type="submit">Пожертвовать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/formstyler.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/tweenMax.min.js"></script>
+    <script src="js/main.js?v1"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Социально-трудовая адаптация молодых людей с ментальными нарушениями - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            .post-header
+                .container
+                    .post-header__breadcrumb
+                        ul.breadcrumb
+                            li
+                                a(href="#") Программы
+                            li
+                                img(src="img/breadcrumb-icon.svg", alt="")
+                                span Социально-трудовая адаптация молодых людей с ментальными нарушениями
+                    h1.post-header__title Социально-трудовая адаптация молодых людей с ментальными нарушениями
+            
+            .program
+                .container
+                    .program__wrap
+                        .program__row
+                            .program__left
+                                .program__icon
+                                    img(src="img/program-icon-1.svg", alt="")
+                                .program__sticker
+                                    img(src="img/program-sticker-1.svg", alt="")
+                            .program__right
+                                .program__bg
+                                .program__info
+                                    .program__text.program__text--green
+                                        img(src="img/program-text-icon-1.svg", alt="")
+                                        p В рамках этого направления молодые люди с ментальными нарушениями создают в инклюзивных мастерских полезные в быту вещи, а также могут получить сопровождение при трудоустройстве.
+                                    .program__img
+                                        img(src="img/program-img-1.jpg", alt="")
+
+            .program-info.section
+                .container
+                    .program-info__wrap
+                        .program-info__row.js-program-info
+                            .program-info__left
+                                .program-info__list
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn.active
+                                            .program-info__label Инклюзивные трудовые мастерские
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob(style="display: block;")
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--pink.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-1.svg", alt="")
+                                                    .program-info__block-sub.h3 Творческое пространство, где&nbsp;обучаются и&nbsp;работают под&nbsp;руководством мастеров
+                                                    .program-info__block-text
+                                                        p Молодые люди создают посуду и предметы интерьера из керамики, изготавливают текстиль, лепят ароматные свечи, рисуют иллюстрации и принты, выращивают комнатные растения.
+                                                        p А также осваивают трудовые навыки: дисциплину, деловой этикет, соблюдение технологических процессов, финансовую и правовую грамотность, учатся взаимодействию в коллективе.
+                                                        p Уже более 50 студентов занимаются и получают стипендию в «местной» валюте – Добриках, которые обменивают  наше магазине. Мы сотрудничаем с бизнесом, чтобы занятость ребят в мастерских превратилась в оплачиваемую работу.
+                                                    .program-info__block-desc
+                                                        p Вы можете стать волонтером, передать нам необходимые материалы, внести единоразовые или регулярные пожертвования, купить изделия из наших мастерских или&nbsp;рассказать о&nbsp;нас в&nbsp;соцсетях.
+                                                        p А также записаться на занятия.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-1.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn
+                                            .program-info__label Сопровождаемое трудоустройство
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--blue.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-2.svg", alt="")
+                                                    .program-info__block-sub.h3 Консультант по труду индивидуально работает с&nbsp;каждым, чтобы устроить его&nbsp;на&nbsp;работу
+                                                    .program-info__block-text
+                                                        p Процесс включает подбор вакансий, составление резюме, организацию и прохождение собеседований, помощь в адаптации и взаимодействие с наставниками на рабочих местах.
+                                                        p Чтобы облегчить понимание своих возможностей или&nbsp;выбор сферы деятельности, мы организуем предпрофессиональные пробы в мастерских: керамической, швейной, свечной, графической, цветочной. 
+                                                        p Также на временных стажировках даем возможность попробовать себя в актуальных массовых профессиях: клинер, мерчендайзер, курьер, помощник кладовщика, продавец, упаковщик и сотрудник офиса.
+                                                    .program-info__block-desc
+                                                        p Это надежный алгоритм, с помощью которого молодые люди с инвалидностью приобретают нужные профессиональные навыки, учатся искать работу и&nbsp;адаптироваться в трудовом коллективе.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-2.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn
+                                            .program-info__label Переработка джинсовой ткани
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--green.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-3.svg", alt="")
+                                                    .program-info__block-sub.h3 Старые джинсы? <br>Не выбрасывайте — отдайте на доброе дело!
+                                                    .program-info__block-text
+                                                        p Ребята из мастерской перерабатывают джинсу и изготавливают подстилки и коврики для животных из&nbsp;приютов. Для переделки они используют джинсы, которые сдают на благотворительность жители Краснодара.
+                                                        p Такое производство помогает молодым людям из нашей организации оттачивать трудовые навыки: они сортируют, стирают, утюжат, кроят и шьют.
+                                                        p Горожане тоже поддерживают нашу акцию и вносят свой вклад в сохранение экологии. Джинсы не попадают на мусорный полигон, а превращаются в полезные изделия.
+                                                    .program-info__block-desc
+                                                        p Передать джинсовые вещи в Краснодаре можно по адресам:
+                                                        ul
+                                                            li пр. Чекистов 10. С пн по пт 9.00-18.00
+                                                            li ул. Трамвайная 2/6, 1 этаж. С пн по пт 9.00-18.00
+                                                            li гул. Северная 405, 1 этаж. С пн по пт 9.00-18.00
+                                                            li Республика Адыгея, Тургеневское шоссе 27, 1 этаж. <br>C пн по вс с 12.00 до 20.00.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-3.jpg", alt="")
+                                .program-info__bg
+                                    .program-info__bg-group.js-program-info-group.active
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-1.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-2.svg", alt="")
+                                    .program-info__bg-group.js-program-info-group
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-2.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-4.svg", alt="")
+                                    .program-info__bg-group.js-program-info-group
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-5.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-6.svg", alt="")
+                            .program-info__right
+                                .program-info__block-list
+                                    .program-info__block.program-info__block--pink.js-program-info-block.active
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-1.svg", alt="")
+                                        .program-info__block-sub.h3 Творческое пространство, где&nbsp;обучаются и&nbsp;работают под&nbsp;руководством мастеров
+                                        .program-info__block-text
+                                            p Молодые люди создают посуду и предметы интерьера из керамики, изготавливают текстиль, лепят ароматные свечи, рисуют иллюстрации и принты, выращивают комнатные растения.
+                                            p А также осваивают трудовые навыки: дисциплину, деловой этикет, соблюдение технологических процессов, финансовую и правовую грамотность, учатся взаимодействию в коллективе.
+                                            p Уже более 50 студентов занимаются и получают стипендию в «местной» валюте – Добриках, которые обменивают  наше магазине. Мы сотрудничаем с бизнесом, чтобы занятость ребят в мастерских превратилась в оплачиваемую работу.
+                                        .program-info__block-desc
+                                            p Вы можете стать волонтером, передать нам необходимые материалы, внести единоразовые или регулярные пожертвования, купить изделия из наших мастерских или&nbsp;рассказать о&nbsp;нас в&nbsp;соцсетях.
+                                            p А также записаться на занятия.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-1.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+                                    .program-info__block.program-info__block--blue.js-program-info-block
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-2.svg", alt="")
+                                        .program-info__block-sub.h3 Консультант по труду индивидуально работает с&nbsp;каждым, чтобы устроить его&nbsp;на&nbsp;работу
+                                        .program-info__block-text
+                                            p Процесс включает подбор вакансий, составление резюме, организацию и прохождение собеседований, помощь в адаптации и взаимодействие с наставниками на рабочих местах.
+                                            p Чтобы облегчить понимание своих возможностей или&nbsp;выбор сферы деятельности, мы организуем предпрофессиональные пробы в мастерских: керамической, швейной, свечной, графической, цветочной. 
+                                            p Также на временных стажировках даем возможность попробовать себя в актуальных массовых профессиях: клинер, мерчендайзер, курьер, помощник кладовщика, продавец, упаковщик и сотрудник офиса.
+                                        .program-info__block-desc
+                                            p Это надежный алгоритм, с помощью которого молодые люди с инвалидностью приобретают нужные профессиональные навыки, учатся искать работу и&nbsp;адаптироваться в трудовом коллективе.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-2.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+                                    .program-info__block.program-info__block--green.js-program-info-block
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-3.svg", alt="")
+                                        .program-info__block-sub.h3 Старые джинсы? <br>Не выбрасывайте — отдайте на доброе дело!
+                                        .program-info__block-text
+                                            p Ребята из мастерской перерабатывают джинсу и изготавливают подстилки и коврики для животных из&nbsp;приютов. Для переделки они используют джинсы, которые сдают на благотворительность жители Краснодара.
+                                            p Такое производство помогает молодым людям из нашей организации оттачивать трудовые навыки: они сортируют, стирают, утюжат, кроят и шьют.
+                                            p Горожане тоже поддерживают нашу акцию и вносят свой вклад в сохранение экологии. Джинсы не попадают на мусорный полигон, а превращаются в полезные изделия.
+                                        .program-info__block-desc
+                                            p Передать джинсовые вещи в Краснодаре можно по адресам:
+                                            ol
+                                                li пр. Чекистов 10. С пн по пт 9.00-18.00
+                                                li ул. Трамвайная 2/6, 1 этаж. С пн по пт 9.00-18.00
+                                                li гул. Северная 405, 1 этаж. С пн по пт 9.00-18.00
+                                                li Республика Адыгея, Тургеневское шоссе 27, 1 этаж. <br>C пн по вс с 12.00 до 20.00.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-3.jpg", alt="")
+
+            .program-steps.section
+                .container
+                    h2.program-steps__title 5 шагов, чтобы посещать занятия
+                    .program-steps__wrap
+                        .program-steps__row
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--blue Шаг 1
+                                        h3.program-steps__sub Оставьте заявку или&nbsp;позвоните нам: <span><a href="tel:+79282416184">+7(928)241-61-84</a></span>
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Познакомьтесь с&nbsp;нами, узнайте подробности о&nbsp;проекте и&nbsp;запишитесь на&nbsp;собеседование
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--pink Шаг 2
+                                        h3.program-steps__sub Пройдите собеседование
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Расскажите о&nbsp;ваших ожиданиях и&nbsp;о&nbsp;характере потенциального воспитанника
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--yellow Шаг 3
+                                        h3.program-steps__sub Заполните анкету воспитанника
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Заполните анкету, напишите заявление и&nbsp;предоставьте необходимые документы
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--green Шаг 4
+                                        h3.program-steps__sub Согласуйте индивидуальное расписание
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Дождитесь регистрации анкеты и&nbsp;согласуйте расписание занятий
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--blue Шаг 5
+                                        h3.program-steps__sub Приступите к&nbsp;занятиям
+                                    .program-steps__bottom
+                                        .program-steps__img
+                                            img(src="img/program-steps-img-1.jpg", alt="")
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__bg
+                                        .program-steps__bg-icon
+                                            img(src="img/program-steps-bg-icon-1.svg", alt="")
+                                    .program-steps__block.program-steps__block--green
+                                        .program-steps__block-sub При регистрации в программе нужны паспорт и СНИЛС воспитанника
+                                            button(type="button").program-steps__hint.hint.hint--small.hint--black i
+                                            .program-steps__hint-text.hint-text.hint-text--white.right Для несовершеннолетних также потребуется паспорт законного представителя.
+                                        .program-steps__block-desc
+                                            p При наличии просим вас предоставить — ИПРА, МСЭ, документы об образовании.
+                                    .program-steps__btn
+                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                            span
+                                                span Оставить заявку

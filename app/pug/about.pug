@@ -1,0 +1,589 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "О нас - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            section.about
+                .container
+                    .about__wrap
+                        .about__row
+                            .about__left
+                                .about__tag
+                                    .tag.tag--small.tag--green О нас
+                                h1.h3.about__title Мы команда краснодарской благотворительной организации для&nbsp;подростков и&nbsp;молодых людей
+                            .about__right
+                                .about__img
+                                    .about__bg
+                                    img(src="img/about-img.jpg", alt="")
+                                    .about__sticker
+                                        img(src="img/about-sticker.svg", alt="")
+
+            section.about-mission.section-small
+                .container
+                    .about-mission__header
+                        .about-mission__tag
+                            .tag.tag--small.tag--blue Миссия
+                        h2.about-mission__title Вовлекаем молодых людей с&nbsp;особенностями развития в&nbsp;активную социальную жизнь
+                    .about-mission__wrap
+                        .about-mission__row
+                            .about-mission__col
+                                .about-mission__item
+                                    .about-mission__desc 
+                                        p Программы
+                                    .about-mission__num 3
+                            .about-mission__col
+                                .about-mission__item
+                                    .about-mission__desc
+                                        p Воспитанники
+                                    .about-mission__num 80+
+                            .about-mission__col
+                                .about-mission__item
+                                    .about-mission__desc
+                                        p Команда
+                                    .about-mission__num 14
+                            .about-mission__col
+                                .about-mission__item
+                                    .about-mission__desc
+                                        p Партнёры
+                                    .about-mission__num 28
+                        .about-mission__info
+                            .about-mission__img
+                                .about-mission__img-bg
+                                    .about-mission__img-bg-icon
+                                        img(src="img/about-mission-bg-icon.svg", alt="")
+                                img(src="img/about-mission-img.jpg", alt="")
+                            .about-mission__info-col
+                                .about-mission__info-desc
+                                    p Безопасное пространство
+                                h3.h4.about-mission__info-sub Наш центр — это безопасное пространство, место для творчества и&nbsp;общения. Мы ценим интересы воспитанников и&nbsp;хотим сделать их счастливее, а&nbsp;жителям Краснодара дарим новый опыт и&nbsp;навыки взаимодействия с&nbsp;теми, кто&nbsp;рядом.
+                                .about-mission__info-list
+                                    .about-mission__info-list-col
+                                        a(href="#" target="_blank").doc-item
+                                            .doc-item__icon
+                                                img(src="img/doc-item-icon-1.svg", alt="")
+                                            .doc-item__col
+                                                .doc-item__label
+                                                    span Свидетельство о регистрации.pdf
+                                                .doc-item__desc
+                                                    p PDF (20 kb)
+                                            .doc-item__right
+                                                img(src="img/doc-item-icon-2.svg", alt="")
+                                    .about-mission__info-list-col
+                                        a(href="#" target="_blank").doc-item
+                                            .doc-item__icon
+                                                img(src="img/doc-item-icon-1.svg", alt="")
+                                            .doc-item__col
+                                                .doc-item__label
+                                                    span Единый_госреестр_юрлиц.pdf
+                                                .doc-item__desc
+                                                    p PDF (20 kb)
+                                            .doc-item__right
+                                                img(src="img/doc-item-icon-2.svg", alt="")
+                                    .about-mission__info-list-col
+                                        a(href="#" target="_blank").doc-item
+                                            .doc-item__icon
+                                                img(src="img/doc-item-icon-1.svg", alt="")
+                                            .doc-item__col
+                                                .doc-item__label
+                                                    span Свидетельство_ФНС.pdf
+                                                .doc-item__desc
+                                                    p PDF (20 kb)
+                                            .doc-item__right
+                                                img(src="img/doc-item-icon-2.svg", alt="")
+                                    .about-mission__info-list-col
+                                        a(href="#" target="_blank").doc-item
+                                            .doc-item__icon
+                                                img(src="img/doc-item-icon-1.svg", alt="")
+                                            .doc-item__col
+                                                .doc-item__label
+                                                    span Протоколо_собрания_№16.pdf
+                                                .doc-item__desc
+                                                    p PDF (20 kb)
+                                            .doc-item__right
+                                                img(src="img/doc-item-icon-2.svg", alt="")
+                                .about-mission__info-btn
+                                    button(type="button").arrow-btn.js-annual-reports-open
+                                        .arrow-btn__icon
+                                            img(src="img/next.svg", alt="")
+                                        .arrow-btn__label
+                                            span Ежегодные отчёты
+                    .annual-reports.js-annual-reports
+                        button(type="button").annual-reports__close.js-annual-reports-close
+                            img(src="img/close.svg", alt="")
+                        .annual-reports__title Ежегодные отчёты
+                        .annual-reports__wrap
+                            .annual-reports__list.js-annual-reports-list
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                                .annual-reports__col
+                                    a(href="#" target="_blank").doc-item
+                                        .doc-item__icon
+                                            img(src="img/doc-item-icon-1.svg", alt="")
+                                        .doc-item__col
+                                            .doc-item__label
+                                                span Свидетельство о регистрации.pdf
+                                            .doc-item__desc
+                                                p PDF (20 kb)
+                                        .doc-item__right
+                                            img(src="img/doc-item-icon-2.svg", alt="")
+                            .annual-reports__pl
+                        .annual-reports__btn
+                            a(href="#").btn-border
+                                span Скачать все
+            .about-team.section-small
+                .container
+                    .about-team__wrap
+                        .about-team__row
+                            .about-team__left
+                                .about-team__header
+                                    .about-team__tag
+                                        .tag.tag--small.tag--white Команда
+                                    .about-team__title.h3 Те, кто помогают людям с&nbsp;особенностями быть увереннее и&nbsp;чувствовать себя на&nbsp;равных с&nbsp;обществом
+                                .about-team__bottom
+                                    .about-team__bottom-bg
+                                        .about-team__bottom-bg-icon
+                                            img(src="img/about-team-bg-icon-1.svg", alt="")
+                                        .about-team__bottom-bg-icon
+                                            img(src="img/about-team-bg-icon-2.svg", alt="")
+                                    .about-team__list.js-team-list
+                                        .about-team__list-wrap
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Анастасия Виноградова
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 2
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 3
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 4
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 5
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 6
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 7
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 8
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 9
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 10
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 11
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                            .about-team__list-item.js-team-item
+                                                .about-team__list-item-col
+                                                    .about-team__name Имя 12
+                                                    .about-team__desc
+                                                        p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                            .about-team__right
+                                .about-team__gallery.js-team-gallery
+                                    .about-team__gallery-wrap.js-team-gallery-wrap
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-1.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-1-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-2.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-2-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-3.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-3-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-4.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-4-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-5.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-5-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-6.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-6-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-7.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-7-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-8.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-8-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-9.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-9-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-10.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-10-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-11.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-11-2.jpg", alt="")
+                                        .about-team__gallery-col
+                                            .about-team__gallery-item.js-team-img
+                                                img(src="img/about-team-gallery-img-1.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-1-2.jpg", alt="")
+                            .about-team__mob
+                                .about-team__slider.swiper-container
+                                    .swiper-wrapper
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-1.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-1-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-2.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-2-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-3.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-3-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-4.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-4-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-5.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-5-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-6.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-6-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-7.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-7-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-8.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-8-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-9.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-9-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-10.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-10-2.jpg", alt="")
+                                        .about-team__slide.swiper-slide
+                                            .about-team__slide-item
+                                                img(src="img/about-team-gallery-img-11.jpg", alt="")
+                                                img(src="img/about-team-gallery-img-11-2.jpg", alt="")
+                                .about-team__list.js-team-list-mob
+                                    .about-team__list-wrap
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Анастасия Виноградова
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 2
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 3
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 4
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 5
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 6
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 7
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 8
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 9
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 10
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+                                        .about-team__list-item.js-team-item-mob
+                                            .about-team__list-item-col
+                                                .about-team__name Имя 11
+                                                .about-team__desc
+                                                    p Фандрайзер фонда. Организует сбор пожертвований и&nbsp;выстраивает коммуникацию с&nbsp;бизнесом
+            section.about-history.section-small
+                .container
+                    .about-history__header
+                        .about-history__tag
+                            .tag.tag--small.tag--blue История
+                        h2.about-history__title Создали центр для молодых людей с&nbsp;ментальными нарушениями, чтобы&nbsp;заниматься с&nbsp;ними творчеством и&nbsp;общаться 
+                    .about-history__wrap
+                        .about-history__row
+                            .about-history__img
+                                .about-history__img-bg
+                                    .about-history__img-bg-icon
+                                        img(src="img/about-history-bg-icon.svg", alt="")
+                                img(src="img/about-history-img.jpg", alt="")
+                            .about-history__info
+                                .about-history__list
+                                    .about-history__col
+                                        .about-history__item
+                                            .about-history__tags
+                                                .about-history__tags-item
+                                                    .tag.tag--small.tag--pink 2014
+                                                .about-history__tags-item
+                                                    .tag.tag--small.tag--yellow Дорогою добра
+                                            .about-history__desc
+                                                p Делать добро мы начинали для самых разных людей: посещали ветеранов, собирали и передавали гуманитарную помощь и проводили праздники для детей с инвалидностью. Но со временем пришло осознание, что нужно сконцентрировать свои силы на чем-то одном, самом важном.
+                                    .about-history__col
+                                        .about-history__item
+                                            .about-history__tags
+                                                .about-history__tags-item
+                                                    .tag.tag--small.tag--pink 2017
+                                                .about-history__tags-item
+                                                    .tag.tag--small.tag--yellow Повортный момент
+                                            .about-history__desc
+                                                p В 2017 году руководитель организации Дана познакомилась с мамой 16-летней девушки с синдромом Дауна. Тогда мы узнали, что очень мало организаций работают с молодыми людьми с ментальными нарушениями. И, когда ребятам исполняется 18, они остаются без помощи и общения.
+                                    .about-history__col
+                                        .about-history__item
+                                            .about-history__tags
+                                                .about-history__tags-item
+                                                    .tag.tag--small.tag--pink Сейчас
+                                                .about-history__tags-item
+                                                    .tag.tag--small.tag--yellow Добрый юг
+                                            .about-history__desc
+                                                p Самые яркие наши проекты — неПросто мастерские и Сопровождаемое трудоустройство. То, благодаря чему каждый из людей с ментальными нарушениями чувствует свою важность и нужность.
+            
+            section.home-training.section-small
+                .home-training__block
+                    .container
+                        .home-training__wrap
+                            .home-training__top
+                                .home-training__left
+                                    h3.home-training__sub Благодаря поддержке благотворителей ребята с&nbsp;ментальными особенностями учатся самостоятельности
+                                .home-training__right
+                                    .home-training__desc
+                                        p Приглашаем вас развивать благотворительные программы вместе. Оформите регулярное пожертвование или сделайте разовый взнос.
+                            .home-training__bottom
+                                .home-training__bg.home-training__bg--2
+                                    .home-training__bg-icon
+                                        img(src="img/home-training-bg-icon-3.svg", alt="")
+                                    .home-training__bg-icon
+                                        img(src="img/home-training-bg-icon-4.svg", alt="")
+                                .home-training__tag-list
+                                    .home-training__tag
+                                        .tag.tag--white Коммуникация
+                                    .home-training__tag
+                                        .tag.tag--white Бытовые навыки
+                                    .home-training__tag
+                                        .tag.tag--yellow Творчество
+                                .home-training__btn
+                                    a(href="#donation" data-fancybox="" data-touch="false" data-donation-type="1").support-btn.magnetic.js-magnetic
+                                        span
+                                            span Поддержать

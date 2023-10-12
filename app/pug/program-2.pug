@@ -1,0 +1,199 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Социализация и абилитация - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            .post-header
+                .container
+                    .post-header__breadcrumb
+                        ul.breadcrumb
+                            li
+                                a(href="#") Программы
+                            li
+                                img(src="img/breadcrumb-icon.svg", alt="")
+                                span Социализация и абилитация
+                    h1.post-header__title Социализация и абилитация
+            
+            .program
+                .container
+                    .program__wrap
+                        .program__row
+                            .program__left
+                                .program__icon
+                                    img(src="img/program-icon-2.svg", alt="")
+                                .program__sticker
+                                    img(src="img/program-sticker-2.svg", alt="")
+                            .program__right
+                                .program__bg
+                                .program__info
+                                    .program__text.program__text--yellow
+                                        img(src="img/program-text-icon-2.svg", alt="")
+                                        p В программу входят регулярные тренинги по&nbsp;развитию и&nbsp;поддержанию навыков успешного взаимодействия, встречи социального клуба, музыкальные занятия, семинары, арт-терапия, а&nbsp;также индивидуальные консультации с&nbsp;психологами для&nbsp;их&nbsp;родителей.
+                                        p Такие занятия поддерживают и&nbsp;помогают развивать навыки общения и&nbsp;чувствовать себя на&nbsp;равных с&nbsp;другими людьми.
+                                    .program__img
+                                        img(src="img/program-img-2.jpg", alt="")
+
+            .program-info.section
+                .container
+                    .program-info__wrap
+                        .program-info__row.js-program-info
+                            .program-info__left
+                                .program-info__list
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn.active
+                                            .program-info__label Комплексные развивающие занятия
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob(style="display: block;")
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--pink.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-1.svg", alt="")
+                                                    .program-info__block-sub.h3 На них ребята учатся взаимодействовать и&nbsp;общаться в&nbsp;коллективе
+                                                    .program-info__block-text
+                                                        p Рисуют, лепят из глины, занимаются декором, развивают бытовые навыки. Это про личностный рост, преодоление поведенческих и эмоциональных барьеров, принятие себя в обществе и про освоение норм социального поведения.
+                                                    .program-info__block-desc
+                                                        p Вы можете стать волонтером, передать нам необходимые материалы, внести единоразовые или регулярные пожертвования, купить изделия из наших мастерских или&nbsp;рассказать о&nbsp;нас в&nbsp;соцсетях.
+                                                        p А также записаться на занятия.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-4.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn
+                                            .program-info__label Встречи социального клуба
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--blue.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-2.svg", alt="")
+                                                    .program-info__block-sub.h3 Чтобы общаться и проводить время вместе, мы встречаемся в социальном клубе
+                                                    .program-info__block-text
+                                                        p Организовать мероприятия помогают волонтеры, занятия проводит психолог. Благодаря встречам ребята развивают навыки взаимодействия в коллективе, знакомятся и свободно общаются.
+                                                        p В социальный клуб мы приглашаем участников проекта сопровождаемого трудоустройства, тех, кто трудится инклюзивных мастерских и ходит на комплексные развивающие занятия. Мы встречаемся раз в неделю по субботам.
+                                                    .program-info__block-desc
+                                                        p Хотите стать организатором встречи? <br>Для записи звоните: <a href="tel:+79180770635">+7 918 077-06-35</a>.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-5.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                .program-info__bg
+                                    .program-info__bg-group.js-program-info-group.active
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-1.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-2.svg", alt="")
+                                    .program-info__bg-group.js-program-info-group
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-2.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-4.svg", alt="")
+                            .program-info__right
+                                .program-info__block-list
+                                    .program-info__block.program-info__block--pink.js-program-info-block.active
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-1.svg", alt="")
+                                        .program-info__block-sub.h3 На них ребята учатся взаимодействовать и&nbsp;общаться в&nbsp;коллективе
+                                        .program-info__block-text
+                                            p Рисуют, лепят из глины, занимаются декором, развивают бытовые навыки. Это про личностный рост, преодоление поведенческих и эмоциональных барьеров, принятие себя в обществе и про освоение норм социального поведения.
+                                        .program-info__block-desc
+                                            p Вы можете стать волонтером, передать нам необходимые материалы, внести единоразовые или регулярные пожертвования, купить изделия из наших мастерских или&nbsp;рассказать о&nbsp;нас в&nbsp;соцсетях.
+                                            p А также записаться на занятия.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-4.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+                                    .program-info__block.program-info__block--blue.js-program-info-block
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-2.svg", alt="")
+                                        .program-info__block-sub.h3 Чтобы общаться и проводить время вместе, мы встречаемся в социальном клубе
+                                        .program-info__block-text
+                                            p Организовать мероприятия помогают волонтеры, занятия проводит психолог. Благодаря встречам ребята развивают навыки взаимодействия в коллективе, знакомятся и свободно общаются.
+                                            p В социальный клуб мы приглашаем участников проекта сопровождаемого трудоустройства, тех, кто трудится инклюзивных мастерских и ходит на комплексные развивающие занятия. Мы встречаемся раз в неделю по субботам.
+                                        .program-info__block-desc
+                                            p Хотите стать организатором встречи? <br>Для записи звоните: <a href="tel:+79180770635">+7 918 077-06-35</a>.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-5.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+
+            .program-steps.section
+                .container
+                    h2.program-steps__title 5 шагов, чтобы посещать занятия
+                    .program-steps__wrap
+                        .program-steps__row
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--blue Шаг 1
+                                        h3.program-steps__sub Оставьте заявку или&nbsp;позвоните нам: <span><a href="tel:+79282416184">+7(928)241-61-84</a></span>
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Познакомьтесь с&nbsp;нами, узнайте подробности о&nbsp;проекте и&nbsp;запишитесь на&nbsp;собеседование
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--pink Шаг 2
+                                        h3.program-steps__sub Пройдите собеседование
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Расскажите о&nbsp;ваших ожиданиях и&nbsp;о&nbsp;характере потенциального воспитанника
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--yellow Шаг 3
+                                        h3.program-steps__sub Заполните анкету воспитанника
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Заполните анкету, напишите заявление и&nbsp;предоставьте необходимые документы
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--green Шаг 4
+                                        h3.program-steps__sub Согласуйте индивидуальное расписание
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Дождитесь регистрации анкеты и&nbsp;согласуйте расписание занятий
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--blue Шаг 5
+                                        h3.program-steps__sub Приступите к&nbsp;занятиям
+                                    .program-steps__bottom
+                                        .program-steps__img
+                                            img(src="img/program-steps-img-1.jpg", alt="")
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__bg
+                                        .program-steps__bg-icon
+                                            img(src="img/program-steps-bg-icon-1.svg", alt="")
+                                    .program-steps__block.program-steps__block--green
+                                        .program-steps__block-sub При регистрации в программе нужны паспорт и СНИЛС воспитанника
+                                            button(type="button").program-steps__hint.hint.hint--small.hint--black i
+                                            .program-steps__hint-text.hint-text.hint-text--white.right Для несовершеннолетних также потребуется паспорт законного представителя.
+                                        .program-steps__block-desc
+                                            p При наличии просим вас предоставить — ИПРА, МСЭ, документы об образовании.
+                                    .program-steps__btn
+                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                            span
+                                                span Оставить заявку

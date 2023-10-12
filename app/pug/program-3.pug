@@ -1,0 +1,289 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Помогаем вместе - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            .post-header
+                .container
+                    .post-header__breadcrumb
+                        ul.breadcrumb
+                            li
+                                a(href="#") Программы
+                            li
+                                img(src="img/breadcrumb-icon.svg", alt="")
+                                span Помогаем вместе
+                    h1.post-header__title Помогаем вместе
+            
+            .program
+                .container
+                    .program__wrap
+                        .program__row
+                            .program__left
+                                .program__icon
+                                    img(src="img/program-icon-3.svg", alt="")
+                                .program__sticker
+                                    img(src="img/program-sticker-3.svg", alt="")
+                            .program__right
+                                .program__bg
+                                .program__info
+                                    .program__text.program__text--blue
+                                        img(src="img/program-text-icon-3.svg", alt="")
+                                        p Совместно с нашими партнерами мы поддерживаем семьи Краснодарского края, которые оказались в трудной жизненной ситуации. Закупаем, фасуем и передаём нуждающимся продуктовые наборы, школьные принадлежности и средства гигиены.
+                                    .program__img
+                                        img(src="img/program-img-3.jpg", alt="")
+
+            .program-info.section
+                .container
+                    .program-info__wrap
+                        .program-info__row.js-program-info
+                            .program-info__left
+                                .program-info__list
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn.active
+                                            .program-info__label Новогодние и Рождественские праздники с КТК
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob(style="display: block;")
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--pink.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-1.svg", alt="")
+                                                    .program-info__block-sub.h3 Новый год — время чудес
+                                                    .program-info__block-text
+                                                        p В этот период наш партнер АО «Каспийский трубопроводный консорциум-Р» радует полезными и сладкими подарками детей из малообеспеченных семей и детей с инвалидностью.
+                                                        p А фасуют и сортируют подарки наши ребята — молодые люди с ментальными нарушениями. Для них это возможность внести свой вклад в создание праздничного настроения и получить зарплату за свой труд.
+                                                    .program-info__block-desc
+                                                        p Для справки: АО КТК реализует благотворительные проекты в муниципалитетах, где проходит трасса нефтепровода и расположены производственные объекты компании. Помощь получают семьи, которые находятся в тяжелой жизненной ситуации. Данные о них предоставляет Управление образования, которое получает информацию от местных школ.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-6.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn
+                                            .program-info__label КТК — первоклассникам
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--green.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-3.svg", alt="")
+                                                    .program-info__block-sub.h3 Дарим детям из малообеспеченных и&nbsp;многодетных семей школьные наборы
+                                                    .program-info__block-text
+                                                        p Наши ребята не остаются в стороне. За фасовку подарков они получают зарплату.Если вы хотите присоединиться к программе в качестве спонсора, напишите нам и мы расскажем как.
+                                                    .program-info__block-desc
+                                                        p Для справки: АО КТК реализует благотворительные проекты в муниципалитетах, где проходит трасса нефтепровода и расположены производственные объекты компании. Помощь получают семьи, которые находятся в тяжелой жизненной ситуации. Данные о них предоставляет Управление образования, которое получает информацию от местных школ.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-7.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                .program-info__bg
+                                    .program-info__bg-group.js-program-info-group.active
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-1.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-2.svg", alt="")
+                                    .program-info__bg-group.js-program-info-group
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-5.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-6.svg", alt="")
+                            .program-info__right
+                                .program-info__block-list
+                                    .program-info__block.program-info__block--pink.js-program-info-block.active
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-1.svg", alt="")
+                                        .program-info__block-sub.h3 Новый год — время чудес
+                                        .program-info__block-text
+                                            p В этот период наш партнер АО «Каспийский трубопроводный консорциум-Р» радует полезными и сладкими подарками детей из малообеспеченных семей и детей с инвалидностью.
+                                            p А фасуют и сортируют подарки наши ребята — молодые люди с ментальными нарушениями. Для них это возможность внести свой вклад в создание праздничного настроения и получить зарплату за свой труд.
+                                        .program-info__block-desc
+                                            p Для справки: АО КТК реализует благотворительные проекты в муниципалитетах, где проходит трасса нефтепровода и расположены производственные объекты компании. Помощь получают семьи, которые находятся в тяжелой жизненной ситуации. Данные о них предоставляет Управление образования, которое получает информацию от местных школ.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-6.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+                                    .program-info__block.program-info__block--green.js-program-info-block
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-3.svg", alt="")
+                                        .program-info__block-sub.h3 Дарим детям из малообеспеченных и&nbsp;многодетных семей школьные наборы
+                                        .program-info__block-text
+                                            p Наши ребята не остаются в стороне. За фасовку подарков они получают зарплату.Если вы хотите присоединиться к программе в качестве спонсора, напишите нам и мы расскажем как.
+                                        .program-info__block-desc
+                                            p Для справки: АО КТК реализует благотворительные проекты в муниципалитетах, где проходит трасса нефтепровода и расположены производственные объекты компании. Помощь получают семьи, которые находятся в тяжелой жизненной ситуации. Данные о них предоставляет Управление образования, которое получает информацию от местных школ.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-7.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+
+            .program-info.section
+                .container
+                    .program-info__wrap
+                        .program-info__row.program-info__row--reverse.js-program-info
+                            .program-info__left
+                                .program-info__list
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn.active
+                                            .program-info__label Помощь рядом. Товары
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob(style="display: block;")
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--blue.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-2.svg", alt="")
+                                                    .program-info__block-sub.h3 Благотворительная программа&nbsp;Яндекса
+                                                    .program-info__block-text
+                                                        p В рамках которой семьи, где проживают люди с инвалидностью, регулярно получают от нас наборы продуктов и бытовой химии.
+                                                        p Оплата осуществляется за счёт средств «Помощь рядом», которые формируются из ежемесячного вклада Яндекса и пожертвований пользователей его проектов — Такси, Маркет, Лавка.
+                                                    .program-info__block-desc
+                                                        p Мы отправляем товары первой необходимости нуждающимся семьям из Краснодара, в которых проживают дети, молодые и взрослые люди с инвалидностью. В гуманитарные наборы входят: продукты, средства личной гигиены и бытовая химия.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-8.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                    .program-info__col
+                                        button(type="button").program-info__item.js-program-info-btn
+                                            .program-info__label Помощь рядом. Такси
+                                            .program-info__arrow
+                                                .dropdown-arrow
+                                                    img(src="img/dropdown-arrow.svg", alt="")
+                                        .program-info__mob
+                                            .program-info__mob-wrap
+                                                .program-info__block.program-info__block--green.js-program-info-block-mob
+                                                    .program-info__block-icon
+                                                        img(src="img/program-info-block-icon-3.svg", alt="")
+                                                    .program-info__block-sub.h3 Бесплатные поездки на&nbsp;такси
+                                                    .program-info__block-text
+                                                        p В рамках благотворительной программы Яндекс организует бесплатные поездки на такси для людей с&nbsp;инвалидностью.
+                                                        p Они могут воспользоваться бесплатным такси, чтобы добраться в медицинские учреждения или на занятия в “Добрый-Юг”.
+                                                    .program-info__block-desc
+                                                        p Оплата осуществляется за счёт средств «Помощь рядом», которые формируются из ежемесячного вклада Яндекса и пожертвований пользователей его проектов — Такси, Маркет, Лавка.
+                                                    .program-info__block-img
+                                                        img(src="img/program-info-block-img-9.jpg", alt="")
+                                                    .program-info__block-btn
+                                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                            span
+                                                                span Оставить заявку
+                                .program-info__bg
+                                    .program-info__bg-group.js-program-info-group.active
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-2.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-4.svg", alt="")
+                                    .program-info__bg-group.js-program-info-group
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-5.svg", alt="")
+                                        .program-info__bg-icon
+                                            img(src="img/program-info-bg-icon-6.svg", alt="")
+                            .program-info__right
+                                .program-info__block-list
+                                    .program-info__block.program-info__block--blue.js-program-info-block.active
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-2.svg", alt="")
+                                        .program-info__block-sub.h3 Благотворительная программа&nbsp;Яндекса
+                                        .program-info__block-text
+                                            p В рамках которой семьи, где проживают люди с инвалидностью, регулярно получают от нас наборы продуктов и бытовой химии.
+                                            p Оплата осуществляется за счёт средств «Помощь рядом», которые формируются из ежемесячного вклада Яндекса и пожертвований пользователей его проектов — Такси, Маркет, Лавка.
+                                        .program-info__block-desc
+                                            p Мы отправляем товары первой необходимости нуждающимся семьям из Краснодара, в которых проживают дети, молодые и взрослые люди с инвалидностью. В гуманитарные наборы входят: продукты, средства личной гигиены и бытовая химия.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-8.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+                                    .program-info__block.program-info__block--green.js-program-info-block
+                                        .program-info__block-icon
+                                            img(src="img/program-info-block-icon-3.svg", alt="")
+                                        .program-info__block-sub.h3 Бесплатные поездки на&nbsp;такси
+                                        .program-info__block-text
+                                            p В рамках благотворительной программы Яндекс организует бесплатные поездки на такси для людей с&nbsp;инвалидностью.
+                                            p Они могут воспользоваться бесплатным такси, чтобы добраться в медицинские учреждения или на занятия в “Добрый-Юг”.
+                                        .program-info__block-desc
+                                            p Оплата осуществляется за счёт средств «Помощь рядом», которые формируются из ежемесячного вклада Яндекса и пожертвований пользователей его проектов — Такси, Маркет, Лавка.
+                                        .program-info__block-img
+                                            img(src="img/program-info-block-img-9.jpg", alt="")
+                                        .program-info__block-btn
+                                            a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                                span
+                                                    span Оставить заявку
+            
+            .program-steps.section
+                .container
+                    h2.program-steps__title 5 шагов, чтобы получить помощь
+                    .program-steps__wrap
+                        .program-steps__row
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--blue Шаг 1
+                                        h3.program-steps__sub Оставьте заявку или&nbsp;позвоните нам: <span><a href="tel:+79282416184">+7(928)241-61-84</a></span>
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Познакомьтесь с&nbsp;нами, узнайте подробности о&nbsp;проекте
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--pink Шаг 2
+                                        h3.program-steps__sub Напишите заявление о&nbsp;включении в&nbsp;проект
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Расскажите о&nbsp;ваших ожиданиях
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--yellow Шаг 3
+                                        h3.program-steps__sub Заполните анкету
+                                    .program-steps__bottom
+                                        .program-steps__desc
+                                            p Заполните анкету, напишите заявление и&nbsp;предоставьте необходимые документы
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--green Шаг 4
+                                        h3.program-steps__sub Ознакомьтесь с&nbsp;правилами программы
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__top
+                                        .program-steps__tag
+                                            .tag.tag--blue Шаг 5
+                                        h3.program-steps__sub Начните получать помощь
+                                    .program-steps__bottom
+                                        .program-steps__img
+                                            img(src="img/program-steps-img-2.jpg", alt="")
+                            .program-steps__col
+                                .program-steps__item
+                                    .program-steps__bg
+                                        .program-steps__bg-icon
+                                            img(src="img/program-steps-bg-icon-1.svg", alt="")
+                                    .program-steps__block.program-steps__block--green
+                                        .program-steps__block-sub При регистрации в программе нужны паспорт и СНИЛС
+                                            button(type="button").program-steps__hint.hint.hint--small.hint--black i
+                                            .program-steps__hint-text.hint-text.hint-text--white.right Для несовершеннолетних также потребуется паспорт законного представителя.
+                                        .program-steps__block-desc
+                                            p При наличии просим вас предоставить — справку об&nbsp;инвалидности.
+                                    .program-steps__btn
+                                        a(href="#feedback-modal" data-fancybox="" data-touch="false").support-btn.magnetic.js-magnetic
+                                            span
+                                                span Оставить заявку

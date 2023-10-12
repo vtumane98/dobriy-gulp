@@ -1,0 +1,293 @@
+footer.footer
+    .container
+        .footer__top
+            .footer__left
+                .footer__logo
+                    a(href="#")
+                        span добрый:)юг
+                .footer__left-col
+                    .footer__desc Краснодарская региональная благотворительная общественная организация «Добрый-Юг»
+                    .footer__requisites
+                        p ОГРН: 1142300003889
+                        p ИНН/КПП: 2304980355/231201001
+                nav.footer__nav
+                    ul
+                        li
+                            a(href="#") Главная
+                        li
+                            a(href="#") О нас
+                        li
+                            a(href="#") Программы
+                        li
+                            a(href="#") Хочу Помочь
+                        li
+                            a(href="#") Нужна Помощь
+                        li
+                            a(href="#") Контакты
+            .footer__right
+                .footer__phone
+                    a(href="tel:+79282416184") +7 (928) 241-61-84
+                .footer__contacts
+                    p Краснодар, Пр.чекистов д.10
+                    p ПН – ПТ: с 9 до 18
+                    p СБ: с 10 до 14
+                .footer__nav
+                    ul
+                        li
+                            a(href="#") Вконтакте
+                        li
+                            a(href="#") Одноклассники
+        .footer__middle
+            .footer__partner
+                img(src="img/footer-partner.png", alt="")
+            .footer__btn
+                a(href="#donation" data-fancybox="" data-touch="false" data-donation-type="1").arrow-btn
+                    .arrow-btn__icon
+                        img(src="img/next.svg", alt="")
+                    .arrow-btn__label
+                        span Поддержать
+        .footer__bottom
+            .footer__bottom-item &copy; 2014-2023, «Добрый-Юг»
+            .footer__bottom-col
+                .footer__bottom-item
+                    a(href="#") Политика конфиденциальности
+                .footer__bottom-item
+                    a(href="#") Согласие на обработку данных
+            .footer__bottom-item
+                a(href="https://www.insaim.design/" target="_blank") Дизайн и разработка — INSAIM
+
+.main-modal.feedback-modal.post-text#feedback-modal
+    button(type="button" data-fancybox-close).main-modal__close
+        img(src="img/close-modal.svg", alt="")
+    .main-modal__container
+        form.feedback-modal__wrap
+            .main-modal__title.feedback-modal__title Оставить заявку
+            .feedback-modal__content
+                .feedback-modal__list.feedback-modal__col
+                    .feedback-modal__input
+                        .main-input
+                            input(type="text" placeholder="Имя и Фамилия" name="name").js-form-input
+                    .feedback-modal__input
+                        .main-input
+                            input(type="email" placeholder="Ваш email" name="email").js-form-input
+                    .feedback-modal__input
+                        .main-input
+                            input(type="tel" placeholder="Номер телефона" name="phone").js-form-input.js-tel-input
+                    .feedback-modal__input
+                        .main-input
+                            input(type="email" placeholder="Ваш email" name="email").js-form-input.error
+                            span Неверный формат
+                .feedback-modal__type.feedback-modal__col
+                    .main-radio-tabs
+                        label.main-radio-tabs__item
+                            input(type="radio" name="transfer-online-bank" checked).js-transfer-online-tab
+                            span Волонтер
+                        label.main-radio-tabs__item
+                            input(type="radio" name="transfer-online-bank").js-transfer-online-tab
+                            span Благополучатель
+                .feedback-modal__program.feedback-modal__col
+                    .main-select
+                        select.js-select
+                            option(value="0") Программа
+                            option(value="2") Сопровождаемое трудоустройство
+                            option(value="3") Переработка джинсовой ткани
+                            option(value="4") Комплексные развивающие занятия
+                            option(value="5") Инклюзивные трудовые мастерские
+                            option(value="6") Сопровождаемое трудоустройство
+                            option(value="7") Комплексные развивающие занятия
+                .feedback-modal__agree.feedback-modal__col
+                    .main-checkbox
+                        label
+                            input(type="checkbox")
+                            span Я даю согласие на обработку персональных данных
+                .feedback-modal__btn.feedback-modal__col
+                    button(type="submit").btn Отправить
+
+.main-modal.create-event-modal.post-text#create-event
+    button(type="button" data-fancybox-close).main-modal__close
+        img(src="img/close-modal.svg", alt="")
+    .main-modal__container
+        .main-modal__wrap
+            .main-modal__title Создать событие в&nbsp;помощь организации
+            .create-event-modal__content
+                p У Вашего издания, портала или блога много читателей? Расскажите о нас, наших проектах и подопечных, размещая наши баннеры, публикуя статьи или посты.
+                ol
+                    li Зарегистрируйтесь на&nbsp;сайте Пользуясь случаем
+                    li Создайте сбор по&nbsp;любому поводу
+                    li Выберите “Добрый-Юг” в графе организаций, которым можно помочь
+                    li Расскажите друзьям о&nbsp;сборе с&nbsp;помощью мессенджеров и&nbsp;социальных сетей
+        .main-modal__btn
+            a(href="#").support-btn.magnetic.js-magnetic
+                span
+                    span Создать событие
+
+.main-modal.transfer-goods-modal.post-text#transfer-goods
+    button(type="button" data-fancybox-close).main-modal__close
+        img(src="img/close-modal.svg", alt="")
+    .main-modal__container
+        .main-modal__wrap
+            .main-modal__title Передать товары
+            .transfer-goods-modal__content
+                p “Доброму-Югу” всегда нужны:
+                ul
+                    li Материалы для&nbsp;творчества (цветная/белая бумага и&nbsp;картон, пластилин, клей и др.)
+                    li Материалы для&nbsp;неПросто мастерских (нитки и&nbsp;ткань, инструменты для&nbsp;работ с&nbsp;керамикой, бумага, краски и&nbsp;др.)
+                    li Материалы для&nbsp;мелкого ремонта
+                    li Офисные принадлежности
+                p Если что-то из&nbsp;этого у&nbsp;вас есть дома или вы&nbsp;хотите помочь как&nbsp;представитель бизнеса, будем рады видеть вас в&nbsp;нашем офисе по&nbsp;адресу: : г.&nbsp;Краснодар, пр.&nbsp;Чекистов,&nbsp;10.
+        .main-modal__btn
+            a(href="#").support-btn.magnetic.js-magnetic
+                span
+                    span Написать в&nbsp;WhatsApp
+
+.main-modal.information-support-modal.post-text#information-support
+    button(type="button" data-fancybox-close).main-modal__close
+        img(src="img/close-modal.svg", alt="")
+    .main-modal__container
+        .main-modal__wrap
+            .main-modal__title Оказать информационную поддержку
+            .information-support-modal__content
+                p У Вашего издания, портала или блога много читателей? Расскажите о&nbsp;нас, наших проектах и&nbsp;подопечных, размещая наши баннеры, публикуя статьи или&nbsp;посты.
+            .information-support-modal__list
+                .information-support-modal__col
+                    .information-support-modal__item
+                        a(href="#" target="_blank").arrow-btn
+                            .arrow-btn__icon
+                                img(src="img/next.svg", alt="")
+                            .arrow-btn__label
+                                span Вконтакте
+                .information-support-modal__col
+                    .information-support-modal__item
+                        a(href="#" target="_blank").arrow-btn
+                            .arrow-btn__icon
+                                img(src="img/next.svg", alt="")
+                            .arrow-btn__label
+                                span Одноклассники
+                .information-support-modal__col
+                    .information-support-modal__item
+                        a(href="#" target="_blank").arrow-btn
+                            .arrow-btn__icon
+                                img(src="img/next.svg", alt="")
+                            .arrow-btn__label
+                                span Телеграмм
+
+.main-modal.transfer-online-modal.post-text#transfer-online
+    button(type="button" data-fancybox-close).main-modal__close
+        img(src="img/close-modal.svg", alt="")
+    .main-modal__container
+        .main-modal__wrap
+            .main-modal__title Сделать перевод в&nbsp;онлайн&#8209;банке
+        .transfer-online-modal__content
+            .main-modal__wrap
+                .transfer-online-modal__tabs
+                    .main-radio-tabs
+                        label.main-radio-tabs__item
+                            input(type="radio" name="transfer-online-bank" checked).js-transfer-online-tab
+                            span в Сбербанке
+                        label.main-radio-tabs__item
+                            input(type="radio" name="transfer-online-bank").js-transfer-online-tab
+                            span в банке Тинькофф
+            .transfer-online-modal__wrap
+                .transfer-online-modal__block.js-transfer-online-block.active
+                    .main-modal__wrap
+                        .transfer-online-modal__block-content
+                            ol
+                                li В личном кабинете «Сбербанк-Онлайн» выберите вкладку «Платежи и переводы». Далее — «Благотворительность и&nbsp;социальная помощь». Выберите «Добрый-Юг» и&nbsp;укажите сумму пожертвования.
+                                li В мобильном приложении «Сбербанка» выберите вкладку «Платежи», введите в&nbsp;строке поиска название Добрый-Юг. Укажите сумму пожертвования.
+                    .main-modal__btn
+                        a(href="#").support-btn.magnetic.js-magnetic
+                            span
+                                span Перейти в&nbsp;Сбербанк
+                .transfer-online-modal__block.js-transfer-online-block
+                    .main-modal__wrap
+                        .transfer-online-modal__block-content
+                            ol
+                                li В личном кабинете «Тинькофф» выберите вкладку «Платежи и переводы». Далее — «Благотворительность и&nbsp;социальная помощь». Выберите «Добрый-Юг» и&nbsp;укажите сумму пожертвования.
+                    .main-modal__btn
+                        a(href="#").support-btn.magnetic.js-magnetic
+                            span
+                                span Перейти в&nbsp;Тинькофф
+
+.main-modal.donation-modal.post-text#donation
+    button(type="button" data-fancybox-close).main-modal__close
+        img(src="img/close-modal.svg", alt="")
+    .main-modal__container
+        .main-modal__wrap
+            .main-modal__title Тип пожертвования
+        form.donation-modal__content
+            .donation-modal__types
+                label.donation-modal__types-item
+                        input(type="radio" name="donation-type" data-donation-type="1" checked).js-donation-modal-type
+                        span Ежемесячно
+                label.donation-modal__types-item
+                    input(type="radio" name="donation-type" data-donation-type="0").js-donation-modal-type
+                    span Разово
+            .donation-modal__sum
+                .donation-modal__sum-col
+                    label.donation-modal__sum-radio
+                        input(type="radio" name="donation-sum" checked).js-donation-sum-btn
+                        span 100 ₽
+                .donation-modal__sum-col
+                    label.donation-modal__sum-radio
+                        input(type="radio" name="donation-sum").js-donation-sum-btn
+                        span 300 ₽
+                .donation-modal__sum-col
+                    label.donation-modal__sum-radio
+                        input(type="radio" name="donation-sum").js-donation-sum-btn
+                        span 500 ₽
+                .donation-modal__sum-col
+                    label.donation-modal__sum-radio
+                        input(type="radio" name="donation-sum").js-donation-sum-btn
+                        span 1000 ₽
+                .donation-modal__sum-col
+                    .donation-modal__sum-input
+                        .main-input
+                            input(type="number" placeholder="Другая сумма" autocomplete="off").js-donation-sum-input
+            .donation-modal__pay-method.donation-modal__col
+                .main-modal__sub Способ оплаты
+                .donation-modal__pay-method-wrap
+                    .pay-method
+                        .pay-method__row
+                            .pay-method__col
+                                label.pay-method__item
+                                    input(type="radio" name="pay-method" checked)
+                                    span
+                                        img(src="img/pay-method-1.png", alt="")
+                                        span Банковская карта
+                            .pay-method__col
+                                label.pay-method__item
+                                    input(type="radio" name="pay-method")
+                                    span
+                                        img(src="img/pay-method-2.png", alt="")
+                                        span Платежная квитанция
+                            .pay-method__col
+                                label.pay-method__item
+                                    input(type="radio" name="pay-method")
+                                    span
+                                        img(src="img/pay-method-3.png", alt="")
+                                        span С помощью SMS
+            .donation-modal__info.donation-modal__col
+                .main-modal__sub Ваши данные
+                .donation-modal__info-wrap
+                    .donation-info
+                        .donation-info__row
+                            .donation-info__col
+                                .main-input
+                                    input(type="email" placeholder="Ваш email" name="email")
+                            .donation-info__col
+                                .main-input
+                                    input(type="text" placeholder="Имя и Фамилия" name="name")
+            .donation-modal__agree
+                .donation-agree
+                    .donation-agree__col
+                        .main-checkbox
+                            label
+                                input(type="checkbox")
+                                span Соглашаюсь с&nbsp;офертой
+                    .donation-agree__col
+                        .main-checkbox
+                            label
+                                input(type="checkbox")
+                                span Соглашаюсь на&nbsp;обработку персональных данных
+            .donation-modal__btn
+                button(type="submit").btn Пожертвовать

@@ -1,0 +1,28 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Наши программы - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            .programs
+                .container
+                    .programs__wrap
+                        .programs__row
+                            .programs__tag
+                                h1.tag.tag--small.tag--green Наши программы
+                            .programs__col
+                                p Меняем к лучшему жизнь людей с аутизмом, синдромом Дауна и другими ментальными особенностями.
+                                p С 2020 года организация является поставщиком социальных услуг. Мы предоставляем социально-трудовые, педагогические и другие услуги молодым людям с инвалидностью старше 18 лет.
+            
+            .programs-list.section-small
+                .container
+                    .programs-list__wrap
+                        ol
+                            li
+                                a(href="program-1.html") Социально-трудовая адаптация молодых людей с&nbsp;ментальными нарушениями
+                            li
+                                a(href="program-2.html") Социализация и&nbsp;абилитация подростков и&nbsp;молодых людей с&nbsp;ментальными нарушениями
+                            li
+                                a(href="program-3.html") Помогаем вместе

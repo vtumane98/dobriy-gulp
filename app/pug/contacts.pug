@@ -1,0 +1,57 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Контакты - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            .post-header
+                .container
+                    h1.post-header__title Контакты
+            .contacts
+                .container
+                    .contacts__wrap
+                        .contacts__row
+                            .contacts__col.contacts__left
+                                .contacts__info
+                                    .contacts__phone
+                                        a(href="tel:+79282416184") +7 (928) 241-61-84
+                                    .contacts__desc
+                                        p <a href="mailto:kroo23@mail.ru">kroo23@mail.ru</a>
+                                        p 350089 г. Краснодар, пр.Чекистов, <br>д.10, помещение 24
+                                .contacts__btn
+                                    a(href="#").support-btn.magnetic.js-magnetic
+                                        span
+                                            span Написать в&nbsp;WhatsApp
+                            .contacts__col.contacts__right
+                                .contacts__bg
+                                    .contacts__bg-icon
+                                        img(src="img/contacts-bg-icon.svg", alt="")
+                                .contacts__right-row
+                                    .contacts__right-col
+                                        .contacts__card
+                                            .contacts__img
+                                                img(src="img/contacts-img-1.jpg", alt="")
+                                            .contacts__tag
+                                                .tag.tag--small.tag--blue Для СМИ и сотрудничества
+                                            .contacts__card-info
+                                                .contacts__card-name Богдана Руднева
+                                                .contacts__card-desc Директор по развитию
+                                                .contacts__card-bottom
+                                                    p
+                                                        a(href="tel:+79883399663") +7 (988) 339-96-63
+                                                    p
+                                                        a(href="mailto:rudneva_dana@mail.ru").contacts__card-bottom-link rudneva_dana@mail.ru
+                                    .contacts__right-col
+                                        .contacts__card
+                                            .contacts__img
+                                                img(src="img/contacts-img-2.jpg", alt="")
+                                            .contacts__tag
+                                                .tag.tag--small.tag--pink О программах и проектах
+                                            .contacts__card-info
+                                                .contacts__card-name Анастасия Виноградова
+                                                .contacts__card-desc Исполнительный директор
+                                                .contacts__card-bottom
+                                                    p
+                                                        a(href="tel:+79286607279") +7 (928) 660-72-79

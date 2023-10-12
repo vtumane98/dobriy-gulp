@@ -1,0 +1,92 @@
+extends layout/main
+    
+block variables
+    - var pageTitle = "Способы помощи - Добрый:)юг"
+
+block content
+    main.main.post
+        .post-wrap
+            .post-header
+                .container
+                    h1.post-header__title Способы помощи
+            .all-help
+                .container
+                    .all-help__wrap
+                        .all-help__row
+                            .all-help__col
+                                a(href="#donation" data-fancybox="" data-touch="false" data-donation-type="0").all-help__item.js-donation-modal-btn
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-1.svg", alt="").js-svg-inline
+                                    .all-help__sub Пожертвовать с&nbsp;банковской карты
+                            .all-help__col
+                                a(href="#donation" data-fancybox="" data-touch="false" data-donation-type="1").all-help__item.js-donation-modal-btn
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-2.svg", alt="").js-svg-inline
+                                    .all-help__sub Жертвовать регулярно
+                            .all-help__col
+                                a(href="#transfer-online" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-3.svg", alt="").js-svg-inline
+                                    .all-help__sub Сделать перевод в&nbsp;онлайн-банке
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-4.svg", alt="").js-svg-inline
+                                    .all-help__sub Пожертвовать по&nbsp;реквизитам
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-5.svg", alt="").js-svg-inline
+                                    .all-help__sub Стать корпоративным партнером
+                            .all-help__col
+                                a(href="#create-event" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-6.svg", alt="").js-svg-inline
+                                    .all-help__sub Создать событие в&nbsp;помощь организации
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-7.svg", alt="").js-svg-inline
+                                    .all-help__sub Приобрести товары из&nbsp;мастерских
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-8.svg", alt="").js-svg-inline
+                                    .all-help__sub Помочь с&nbsp;реализацией продукции мастерских
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-9.svg", alt="").js-svg-inline
+                                    .all-help__sub Помочь на&nbsp;других платформах
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-10.svg", alt="").js-svg-inline
+                                    .all-help__sub Ящик для пожертвований
+                            .all-help__col
+                                a(href="#information-support" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-11.svg", alt="").js-svg-inline
+                                    .all-help__sub Информационная поддержка
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-12.svg", alt="").js-svg-inline
+                                    .all-help__sub Стать <br>волонтером
+                            .all-help__col
+                                a(href="#transfer-goods" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-13.svg", alt="").js-svg-inline
+                                    .all-help__sub Передать <br>товары
+                            .all-help__col
+                                a(href="#feedback-modal" data-fancybox="" data-touch="false").all-help__item
+                                    .all-help__icon
+                                        img(src="img/all-help-icon-14.svg", alt="").js-svg-inline
+                                    .all-help__sub Сдать джинсу на&nbsp;переработку
+                            .all-help__col
+                                .all-help__other
+                                    .all-help__other-text Не нашли подходящий способ помочь или остались вопросы?
+                                    .all-help__other-btn
+                                        a(href="#").support-btn.magnetic.js-magnetic
+                                            span
+                                                span Написать в&nbsp;WhatsApp
