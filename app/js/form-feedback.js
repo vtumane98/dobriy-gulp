@@ -10,7 +10,9 @@ $(document).on('submit', '[data-action="form-rest"]', function (e) {
         data: $form.serialize()
     }).done(function (data) {
         if (data === true) {
-            $form.html('Спасибо! Ваша заявка принята.');
+            $form
+                .addClass('--submitted')
+                .html('<h1>Спасибо!<br>Ваша заявка принята.</h1>');
             return;
         }
 
@@ -25,8 +27,7 @@ $(document).on('submit', '[data-action="form-rest"]', function (e) {
                     .find('[name="' + item.name + '"]')
                     .addClass('error')
                     .on('change focus', function (e) {
-                        console.log(1);
-                        $error.hide(200);
+                        $error.hide(100);
                         $(this).removeClass('error');
                         $(this).unbind(e.type);
                     });
