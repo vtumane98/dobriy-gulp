@@ -60,34 +60,39 @@ footer.footer
     button(type="button" data-fancybox-close).main-modal__close
         img(src="img/close-modal.svg", alt="")
     .main-modal__container
-        form.feedback-modal__wrap
+        form(action="/rest-url/" data-action="form-rest").feedback-modal__wrap
+            input(type="hidden" value="feedback")
             .main-modal__title.feedback-modal__title Оставить заявку
             .feedback-modal__content
                 .feedback-modal__list.feedback-modal__col
                     .feedback-modal__input
                         .main-input
                             input(type="text" placeholder="Имя и Фамилия" name="name").js-form-input
+                            span(data-error="name").error-input
                     .feedback-modal__input
                         .main-input
                             input(type="email" placeholder="Ваш email" name="email").js-form-input
+                            span(data-error="email").error-input
                     .feedback-modal__input
                         .main-input
                             input(type="tel" placeholder="Номер телефона" name="phone").js-form-input.js-tel-input
+                            span(data-error="phone").error-input
                     .feedback-modal__input
                         .main-input
                             input(type="email" placeholder="Ваш email" name="email").js-form-input.error
-                            span Неверный формат
+                            span(data-error="email").error-input Неверный формат
                 .feedback-modal__type.feedback-modal__col
                     .main-radio-tabs
                         label.main-radio-tabs__item
-                            input(type="radio" name="transfer-online-bank" checked).js-transfer-online-tab
+                            input(type="radio" name="who" value="1" checked).js-transfer-online-tab
                             span Волонтер
                         label.main-radio-tabs__item
-                            input(type="radio" name="transfer-online-bank").js-transfer-online-tab
+                            input(type="radio" name="who" value="2").js-transfer-online-tab
                             span Благополучатель
+                    span(data-error="who").error-input
                 .feedback-modal__program.feedback-modal__col
                     .main-select
-                        select.js-select
+                        select(name="program").js-select
                             option(value="0") Программа
                             option(value="2") Сопровождаемое трудоустройство
                             option(value="3") Переработка джинсовой ткани
@@ -95,11 +100,13 @@ footer.footer
                             option(value="5") Инклюзивные трудовые мастерские
                             option(value="6") Сопровождаемое трудоустройство
                             option(value="7") Комплексные развивающие занятия
+                        span(data-error="program").error-input
                 .feedback-modal__agree.feedback-modal__col
                     .main-checkbox
                         label
-                            input(type="checkbox")
+                            input(type="checkbox" name="agree")
                             span Я даю согласие на обработку персональных данных
+                    span(data-error="agree").error-input
                 .feedback-modal__btn.feedback-modal__col
                     button(type="submit").btn Отправить
 
@@ -182,13 +189,13 @@ footer.footer
                 .transfer-online-modal__tabs
                     .main-radio-tabs
                         label.main-radio-tabs__item
-                            input(type="radio" name="transfer-online-bank" checked).js-transfer-online-tab
+                            input(type="radio" name="transfer-online-bank" checked).js-online-tab
                             span в Сбербанке
                         label.main-radio-tabs__item
-                            input(type="radio" name="transfer-online-bank").js-transfer-online-tab
+                            input(type="radio" name="transfer-online-bank").js-online-tab
                             span в банке Тинькофф
             .transfer-online-modal__wrap
-                .transfer-online-modal__block.js-transfer-online-block.active
+                .transfer-online-modal__block.js-online-block.active
                     .main-modal__wrap
                         .transfer-online-modal__block-content
                             ol
@@ -198,7 +205,7 @@ footer.footer
                         a(href="#").support-btn.magnetic.js-magnetic
                             span
                                 span Перейти в&nbsp;Сбербанк
-                .transfer-online-modal__block.js-transfer-online-block
+                .transfer-online-modal__block.js-online-block
                     .main-modal__wrap
                         .transfer-online-modal__block-content
                             ol

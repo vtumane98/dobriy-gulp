@@ -1207,15 +1207,6 @@ h4, .h4 {
     visibility: hidden;
 }
 
-.main-input input + span {
-    display: none;
-    font-size: 14px;
-    line-height: 18px;
-    color: #EF6161;
-    padding-top: 4px;
-    padding-left: 25px;
-}
-
 .pay-method__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1410,6 +1401,10 @@ h4, .h4 {
 .feedback-modal__wrap {
     max-width: 412px;
     margin: 0 auto;
+}
+
+.feedback-modal__wrap.--submitted {
+    max-width: 600px;
 }
 
 .feedback-modal__title {
@@ -7051,4 +7046,13 @@ ul.breadcrumb li:last-child {
         left: -10px;
         right: -10px;
     }
+}
+
+.error-input{
+    display: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #EF6161;
+    padding-top: 4px;
+    padding-left: 25px;
 }
